@@ -1,0 +1,150 @@
+@import "../start/startTemplate.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headImg {
+  height: 280rpx;
+  width: 100%;
+  -webkit-filter: blur(20px);
+}
+
+.headImgHover {
+  height: 320rpx;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  letter-spacing: 2px;
+}
+
+.subTitle {
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+
+.highLightFont {
+  color: #FF0000;
+  font-size: 25rpx;
+  margin-right: 10rpx;
+}
+
+.plainFont {
+  color: #FFC125;
+  font-size: 25rpx;
+  margin-right: 30rpx;
+}
+
+.movieImg {
+  height: 238rpx;
+  width: 175rpx;
+  position: absolute;
+  top: 160rpx;
+  right: 30rpx;
+}
+
+.summary {
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  color: #777;
+}
+
+.originalTitle {
+  color: #1f3463;
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+
+.mark {
+  margin-right: 30rpx;
+  white-space: nowrap; /*不让换行*/
+  color: #999;
+}
+
+.hr {
+  margin-top: 45rpx;
+  height: 1px;
+  width: 750rpx;
+  background-color: #d9d9d9;
+}
+
+.synopsis {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+.synopsisFont{
+  color: #999;
+}
+
+.summaryContent {
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height: 40rpx;
+  letter-spacing: 1px;
+}
+
+.cast {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+
+.castFont {
+  color: #999;
+  margin-bottom: 40rpx;
+}
+
+.castImgs {
+  white-space: nowrap;
+}
+
+.castContent {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+  margin-right: 40rpx;
+  width: 170rpx;
+  text-align: center;
+  white-space: normal;
+}
+
+.castImg {
+  width: 170rpx;
+  height: 210rpx;
+}
+
+.castName {
+  margin: 10rpx auto 0;
+  word-break: break-all;
+}

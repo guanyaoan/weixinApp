@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="/images/supman.jpg" class="supman"></image>
+    <text class="title">Hello,你终于来了！</text>
+    <view class="motoContainer" bindtap="onTap">
+        <text class="moto">开启小程序之旅</text>
+    </view>
+</view>

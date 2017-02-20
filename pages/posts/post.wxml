@@ -1,0 +1,59 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="2000" catchtap="onswiper">
+  <!--白羊座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485155219148&di=732b5528dfc920a4b5611988f6ba5cbe&imgtype=0&src=http%3A%2F%2Fxingzuo.258.com%2Fdata258%2Fxingzuo.258.com%2F20160412%2F20160412141831410.jpg" data-postId="0"></image>
+    </swiper-item>
+<!--金牛座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485155694404&di=36ffae996b9c17a22ec726cd013f1118&imgtype=0&src=http%3A%2F%2Fimg.popoho.com%2Fallimg%2F151208%2F1022492a0-0.jpg" data-postId="1"></image>
+    </swiper-item>
+<!--双子座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485155766377&di=9ff8409a96a1dfce04c19360395cbd24&imgtype=0&src=http%3A%2F%2Fpic15.nipic.com%2F20110709%2F1369025_204143590319_2.jpg" data-postId="2"></image>
+    </swiper-item>
+<!--巨蟹座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485155860662&di=bc2c0682d0a628afae8648624a224ef9&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F16%2F13%2F11J58PICT43_1024.jpg" data-postId="3"></image>
+    </swiper-item>
+<!--狮子座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485155901043&di=9dc040bb2396f2a2c8b1fe1752cd3d17&imgtype=0&src=http%3A%2F%2Fimg.popoho.com%2Fallimg%2F151208%2F1022492063-10.jpg" data-postId="4"></image>
+    </swiper-item>
+<!--处女座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156015579&di=c85197d531b96ee361874837cdcd98bf&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F12%2F21%2F01%2F93bOOOPICba_1024.jpg" data-postId="5"></image>
+    </swiper-item>
+<!--天秤座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156054300&di=4f33bbb54989218ab29acd608114dfd5&imgtype=0&src=http%3A%2F%2Fuploadfile.bizhizu.cn%2F2015%2F0112%2F20150112024206616.jpg" data-postId="6"></image>
+    </swiper-item>
+<!--天蝎座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156099863&di=086a79a5199f1c4e2bb02f8773f1a123&imgtype=0&src=http%3A%2F%2Fpic15.nipic.com%2F20110709%2F1369025_182318282368_2.jpg" data-postId="7"></image>
+    </swiper-item>
+<!--射手座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156144727&di=6e00f9fedb6b1d4b5785e52006f53875&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F9a504fc2d5628535e22e98b091ef76c6a6ef6350.jpg" data-postId="8"></image>
+    </swiper-item>
+<!--摩羯座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156189300&di=7c9045308d8656c5bf55068b08ccc45f&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F12%2F21%2F02%2F15bOOOPIC2d_1024.jpg" data-postId="9"></image>
+    </swiper-item>
+<!--水瓶座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156264233&di=6959f851f102d3aa8f7477d6d18309fd&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F12%2F21%2F02%2F77bOOOPIC46_1024.jpg" data-postId="10"></image>
+    </swiper-item>
+<!--双鱼座-->
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485156361366&di=98e7e8bb504697cd6dfaafdcf220c21c&imgtype=0&src=http%3A%2F%2F5.66825.com%2Fdownload%2Fpic%2F000%2F328%2Fbd8ca79602d927d180585e73299a64e7.jpg" data-postId="11"></image>
+    </swiper-item>
+
+  </swiper>
+  <block wx:for="{{posyKey}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap="onTap" data-postId="{{item.postId}}">
+      <template is="postItem" data="{{...item}}" />
+    </view>
+  </block>
+</view>

@@ -1,0 +1,11 @@
+<template name="startTemplate">
+  <view class="startContainer">
+    <view class="starts">
+      <block wx:for="{{starts}}" wx:for-item="i">
+        <image wx:if="{{i}}" src="/images/yellowStart.png"></image>
+        <image wx:else src="/images/start.png"></image>
+      </block>
+    </view>
+    <text class="startScore">{{score}}</text>
+  </view>
+</template>

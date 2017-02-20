@@ -1,0 +1,53 @@
+<import src="../start/startTemplate.wxml" />
+<view class="container">
+  <image src="{{movie.movieImg}}" class="headImg" mode="aspectFill" />
+  <view class="headImgHover" data-src="{{movie.movieImg}}" catchtap="onMovieImg">
+    <text class="mainTitle">{{movie.title}}</text>
+    <text class="subTitle">{{movie.country+"."+movie.year}}</text>
+    <view class="like">
+      <text class="highLightFont">{{movie.wishCount}}</text>
+      <text class="plainFont">人喜欢</text>
+      <text class="highLightFont">{{movie.commentCount}}</text>
+      <text class="plainFont">评论</text>
+    </view>
+  </view>
+  <image src="{{movie.movieImg}}" class="movieImg" data-src="{{movie.movieImg}}" catchtap="onMovieImg"/>
+  <view class="summary">
+    <view class="originalTitle">
+      <text>{{movie.originalTitle}}</text>
+    </view>
+    <view class="flexRow">
+      <text class="mark">评分</text>
+      <template is="startTemplate" data="{{starts:movie.starts,score:movie.score}}"></template>
+    </view>
+    <view class="flexRow">
+      <text class="mark">导演</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class="flexRow">
+      <text class="mark">演员</text>
+      <text>{{movie.casts}}</text>
+    </view>
+    <view class="flexRow">
+      <text class="mark">类型</text>
+      <text>{{movie.genres}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsisFont">剧情简介</text>
+    <text class="summaryContent">{{movie.summary}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="cast">
+    <text>演员</text>
+    <scroll-view class="castImgs" scroll-x="true" style="width:100%">
+      <block wx:for="{{movie.castsInfo}}" wx:for-item="item">
+        <view class="castContent">
+          <image src="{{item.img}}" class="castImg"></image>
+          <text class="castName">{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

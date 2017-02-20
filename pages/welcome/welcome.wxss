@@ -1,0 +1,33 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.supman{
+    width:200rpx;
+    height:200rpx;
+    border-radius:100rpx;
+    margin-top:160rpx;
+}
+.title{
+    font-size:43rpx;
+    margin-top:30rpx;
+}
+.moto{
+    font-size:38rpx;
+    line-height: 80rpx;
+    color:#405f80;
+}
+.motoContainer{
+    margin-top:200rpx;
+    border:1px solid #405f80;
+    border-radius: 5px;
+    text-align: center;
+    height: 80rpx;
+    width: 300rpx;
+}
+page{
+    background-color:#b3d4db;
+    height:100%;
+}

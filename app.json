@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/post",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/movies/more-movie/more-movie",
+    "pages/movies/movie-detail/movie-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/post",
+        "text": "占星学",
+        "iconPath": "/images/article.png",
+        "selectedIconPath": "/images/articleSele.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/movie.png",
+        "selectedIconPath": "/images/movieSele.png"
+      }
+    ],
+    "color": "#1874CD",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "position": "bottom"
+  }
+}

@@ -1,0 +1,6 @@
+text{
+    font-family: Microsoft YaHei;
+    /*font-weight: bold;*/
+    font-size: 24rpx;
+    color:#666;
+}
